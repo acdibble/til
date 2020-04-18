@@ -32,7 +32,7 @@ do
 
   if [[ ! -z $category ]]; then
     if [[ ! -z $line ]]; then
-      titelized=$(echo "${line:0:-3}" | sed -r -e "s/-|_/ /g" -e 's/\b(.)/\U\1/g')
+      titelized=$(echo "${line:0:-3}" | sed -r -e "s/-|_/ /g" -e 's/ (.)/\U\1/g')
       file_list="${file_list}- [$titelized]($category/$line)\n"
     fi
   fi

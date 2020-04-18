@@ -30,11 +30,9 @@ do
     continue
   fi
 
-  if [[ -n $category ]]; then
-    if [[ -n $line ]]; then
-      titelized=$(echo "${line:0:-3}" | sed -r -e "s/-|_/ /g" -e 's/ (.)/\U\1/g')
-      file_list="${file_list}- [$titelized]($category/$line)\n"
-    fi
+  if [[ -n $category && -n $line ]]; then
+    titelized=$(echo "${line:0:-3}" | sed -r -e "s/-|_/ /g" -e 's/ (.)/\U\1/g')
+    file_list="${file_list}- [$titelized]($category/$line)\n"
   fi
 done <<< "$files"
 

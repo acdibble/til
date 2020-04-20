@@ -9,13 +9,13 @@ variety of languages and technologies.
 
 ### Categories
 
-* [zsh](#zsh)
+* [shell](#shell)
 
 ---
 
-### zsh
+### shell
 
-- [Aliases](zsh/aliases.md)
+- [Oh My Zsh Aliases](shell/oh-my-zsh-aliases.md)
 
 ## About
 

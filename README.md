@@ -15,6 +15,7 @@ variety of languages and technologies.
 
 ### shell
 
+- [`mv` Tips and Tricks](shell/mv-tips-and-tricks.md)
 - [Oh My Zsh Aliases](shell/oh-my-zsh-aliases.md)
 
 ## About

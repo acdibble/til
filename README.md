@@ -13,6 +13,10 @@ variety of languages and technologies.
 
 ---
 
+### javascript
+
+- [Readline interface](javascript/readline-interface.md)
+
 ### shell
 
 - [`mv` Tips and Tricks](shell/mv-tips-and-tricks.md)

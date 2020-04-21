@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 const fs = require('fs');
 
-const [category, tocCategory, fileName, ...tocNameParts] = process.argv.slice(2);
-
-const tocName = tocNameParts.join(' ');
+const [
+  tocCategory,
+  tocName,
+  fileName = tocName.toLowerCase().replace(/ /g, '-'),
+  category = tocCategory.toLowerCase(),
+] = process.argv.slice(2);
 
 const re = /[^\w]/g;
 const lowerCaseAndSort = (array) => array.sort((a, b) => (

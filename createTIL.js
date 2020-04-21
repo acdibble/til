@@ -1,9 +1,14 @@
 #!/usr/bin/env node
 const fs = require('fs');
 
-const [category, fileName, ...tocNameParts] = process.argv.slice(2);
+const [category, tocCategory, fileName, ...tocNameParts] = process.argv.slice(2);
 
 const tocName = tocNameParts.join(' ');
+
+const re = /[^\w]/g;
+const lowerCaseAndSort = (array) => array.sort((a, b) => (
+  a.replace(re, '').toLowerCase() < b.replace(re, '').toLowerCase() ? -1 : 1
+));
 
 try {
   fs.mkdirSync(`${__dirname}/${category}`);
@@ -22,7 +27,7 @@ Here is some more text maybe with the source or some additional info.`, 'utf8');
 
 const readme = fs.readFileSync('README.md', 'utf8').split('\n');
 
-const newCategory = `### ${category}`;
+const newCategory = `### ${tocCategory}`;
 let newCatIndex = readme.indexOf(newCategory);
 const categories = readme.filter((line) => line.startsWith('###')).slice(1);
 
@@ -32,15 +37,17 @@ if (newCatIndex === -1) {
   newCatIndex = readme.indexOf(categories[categories.indexOf(newCategory) + 1 ]);
   if (newCatIndex === -1) newCatIndex = readme.indexOf('## About');
   readme.splice(newCatIndex, 0, newCategory, '', '');
+  const categoryList = readme.filter((l) => /\* \[\w+\]\(#/.test(l));
+  categoryList.push(`* [${tocCategory}](#${tocCategory})`);
+  lowerCaseAndSort(categoryList);
+  const categoryListStart = readme.indexOf('### Categories');
+  readme.splice(categoryListStart + 2, categoryList.length -1, ...categoryList);
 }
 
 const nextTopic = categories[categories.indexOf(newCategory) + 1];
 const topics = readme.slice(newCatIndex + 2, readme.indexOf(nextTopic || '## About') - 1);
 topics.push(`- [${tocName}](${category}/${fileName}.md)`);
-const re = /[^\w]/g;
-topics.sort((a, b) => (
-  a.replace(re, '').toLowerCase() < b.replace(re, '').toLowerCase() ? -1 : 1
-));
+lowerCaseAndSort(topics);
 readme.splice(newCatIndex + 2, topics.length - 1, ...topics);
 
 fs.writeFileSync('README.md', readme.join('\n'), 'utf8');

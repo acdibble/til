@@ -23,6 +23,10 @@ variety of languages and technologies.
 - [Oh My Zsh Aliases](shell/oh-my-zsh-aliases.md)
 - [String manipulation](shell/string-manipulation.md)
 
+### webassembly
+
+- [Memory management](webassembly/memory-management.md)
+
 ## About
 
 I shamelessly stole this idea from

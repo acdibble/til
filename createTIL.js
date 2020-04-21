@@ -36,7 +36,7 @@ const categories = readme.filter((line) => line.startsWith('###')).slice(1);
 
 if (newCatIndex === -1) {
   categories.push(newCategory);
-  categories.sort();
+  lowerCaseAndSort(categories);
   newCatIndex = readme.indexOf(categories[categories.indexOf(newCategory) + 1 ]);
   if (newCatIndex === -1) newCatIndex = readme.indexOf('## About');
   readme.splice(newCatIndex, 0, newCategory, '', '');

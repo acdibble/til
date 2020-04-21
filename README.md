@@ -9,11 +9,13 @@ variety of languages and technologies.
 
 ### Categories
 
+* [JavaScript](#JavaScript)
 * [shell](#shell)
+* [WebAssembly](#WebAssembly)
 
 ---
 
-### javascript
+### JavaScript
 
 - [Readline interface](javascript/readline-interface.md)
 
@@ -23,7 +25,7 @@ variety of languages and technologies.
 - [Oh My Zsh Aliases](shell/oh-my-zsh-aliases.md)
 - [String manipulation](shell/string-manipulation.md)
 
-### webassembly
+### WebAssembly
 
 - [Memory management](webassembly/memory-management.md)
 

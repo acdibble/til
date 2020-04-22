@@ -41,5 +41,3 @@ and [WASM by Hand](https://github.com/rhmoller/wasm-by-hand) (but it's a
 different one).
 
 [1] [Linear memory](https://webassembly.org/docs/semantics/#linear-memory)
-<br/>
-[1] [Linear memory](https://webassembly.org/docs/semantics/#linear-memory)

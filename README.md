@@ -9,11 +9,16 @@ variety of languages and technologies.
 
 ### Categories
 
+* [C++](#C++)
 * [JavaScript](#JavaScript)
 * [shell](#shell)
 * [WebAssembly](#WebAssembly)
 
 ---
+
+### C++
+
+- [Scoped enums](c++/scoped-enums.md)
 
 ### JavaScript
 

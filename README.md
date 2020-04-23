@@ -32,6 +32,7 @@ variety of languages and technologies.
 
 ### WebAssembly
 
+- [Break statements](webassembly/break-statements.md)
 - [Global variables](webassembly/global-variables.md)
 - [Memory management](webassembly/memory-management.md)
 

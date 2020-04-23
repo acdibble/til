@@ -32,6 +32,7 @@ variety of languages and technologies.
 
 ### WebAssembly
 
+- [Global variables](webassembly/global-variables.md)
 - [Memory management](webassembly/memory-management.md)
 
 ## About

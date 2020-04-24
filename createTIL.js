@@ -40,11 +40,11 @@ if (newCatIndex === -1) {
   newCatIndex = readme.indexOf(categories[categories.indexOf(newCategory) + 1 ]);
   if (newCatIndex === -1) newCatIndex = readme.indexOf('## About');
   readme.splice(newCatIndex, 0, newCategory, '', '');
-  const categoryList = readme.filter((l) => /\* \[\w+\]\(#/.test(l));
-  categoryList.push(`* [${tocCategory}](#${tocCategory})`);
+  const categoryList = readme.filter((l) => /\- \[.+?\]\(#/.test(l));
+  categoryList.push(`- [${tocCategory}](#${tocCategory})`);
   lowerCaseAndSort(categoryList);
   const categoryListStart = readme.indexOf('### Categories');
-  readme.splice(categoryListStart + 2, categoryList.length -1, ...categoryList);
+  readme.splice(categoryListStart + 2, categoryList.length - 1, ...categoryList);
 }
 
 const nextTopic = categories[categories.indexOf(newCategory) + 1];

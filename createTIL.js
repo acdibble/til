@@ -50,7 +50,6 @@ if (newCatIndex === -1) {
 const nextTopic = categories[categories.indexOf(newCategory) + 1];
 const topics = readme.slice(newCatIndex + 2, readme.indexOf(nextTopic || '## About') - 1);
 topics.push(`- [${tocName}](${category}/${fileName}.md)`);
-console.log(topics)
 topics.filter(Boolean).sort(lowerCaseAndSort((s) => s.match(/\[.+?\]/)[1]));
 readme.splice(newCatIndex + 2, topics.length - 1, ...topics);
 

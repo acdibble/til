@@ -26,7 +26,7 @@ demonstrating it:
 $ echo "The example"
 \`\`\`
 
-Here is some more text maybe with the source or some additional info.`, 'utf8');
+Here is some more text maybe with the source or some additional info.`, { encoding: 'utf8', flag: 'wx' });
 
 const readme = fs.readFileSync('README.md', 'utf8').split('\n');
 

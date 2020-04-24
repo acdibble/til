@@ -9,9 +9,10 @@ variety of languages and technologies.
 
 ### Categories
 
-* [C++](#C++)
 * [JavaScript](#JavaScript)
 * [shell](#shell)
+* [vim](#vim)
+* [WebAssembly](#WebAssembly)
 * [WebAssembly](#WebAssembly)
 
 ---
@@ -30,6 +31,10 @@ variety of languages and technologies.
 - [Oh My Zsh Aliases](shell/oh-my-zsh-aliases.md)
 - [String manipulation](shell/string-manipulation.md)
 - [`which`](shell/which.md)
+
+### vim
+
+- [Ruler](vim/ruler.md)
 
 ### WebAssembly
 

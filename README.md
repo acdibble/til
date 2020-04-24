@@ -9,10 +9,10 @@ variety of languages and technologies.
 
 ### Categories
 
+* [C++](#C++)
 * [JavaScript](#JavaScript)
 * [shell](#shell)
 * [vim](#vim)
-* [WebAssembly](#WebAssembly)
 * [WebAssembly](#WebAssembly)
 
 ---

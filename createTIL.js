@@ -9,9 +9,9 @@ const [
 ] = process.argv.slice(2);
 
 const re = /[^\w]/g;
-const lowerCaseAndSort = (array) => array.sort((a, b) => (
-  a.replace(re, '').toLowerCase() < b.replace(re, '').toLowerCase() ? -1 : 1
-));
+const lowerCaseAndSort = (transform) => (a, b) => (
+  transform(a) < transform(b) ? -1 : 1
+);
 
 try {
   fs.mkdirSync(`${__dirname}/${category}`);
@@ -36,13 +36,13 @@ const categories = readme.filter((line) => line.startsWith('###')).slice(1);
 
 if (newCatIndex === -1) {
   categories.push(newCategory);
-  lowerCaseAndSort(categories);
+  categories.sort(lowerCaseAndSort((s) => s.replace(re, '').toLowerCase()));
   newCatIndex = readme.indexOf(categories[categories.indexOf(newCategory) + 1 ]);
   if (newCatIndex === -1) newCatIndex = readme.indexOf('## About');
   readme.splice(newCatIndex, 0, newCategory, '', '');
   const categoryList = readme.filter((l) => /\- \[.+?\]\(#/.test(l));
   categoryList.push(`- [${tocCategory}](#${tocCategory})`);
-  lowerCaseAndSort(categoryList);
+  categoryList.sort(lowerCaseAndSort((s) => s.replace(re, "").toLowerCase()));
   const categoryListStart = readme.indexOf('### Categories');
   readme.splice(categoryListStart + 2, categoryList.length - 1, ...categoryList);
 }
@@ -50,7 +50,8 @@ if (newCatIndex === -1) {
 const nextTopic = categories[categories.indexOf(newCategory) + 1];
 const topics = readme.slice(newCatIndex + 2, readme.indexOf(nextTopic || '## About') - 1);
 topics.push(`- [${tocName}](${category}/${fileName}.md)`);
-lowerCaseAndSort(topics);
+console.log(topics)
+topics.filter(Boolean).sort(lowerCaseAndSort((s) => s.match(/\[.+?\]/)[1]));
 readme.splice(newCatIndex + 2, topics.length - 1, ...topics);
 
 fs.writeFileSync('README.md', readme.join('\n'), 'utf8');

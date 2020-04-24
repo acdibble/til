@@ -14,5 +14,5 @@ rl.on('line', processLine);
 
 Here's
 [an example](https://gist.github.com/acdibble/b4961524b11ce9c529b3791ce23f4a6c)
-usage for inserting `eslint-ignore-next-line` comments based of of the eslint
+usage for inserting `eslint-ignore-next-line` comments based off of the eslint
 cli output.

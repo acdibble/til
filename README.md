@@ -9,11 +9,11 @@ variety of languages and technologies.
 
 ### Categories
 
-* [C++](#C++)
-* [JavaScript](#JavaScript)
-* [shell](#shell)
-* [vim](#vim)
-* [WebAssembly](#WebAssembly)
+- [C++](#C++)
+- [JavaScript](#JavaScript)
+- [shell](#shell)
+- [vim](#vim)
+- [WebAssembly](#WebAssembly)
 
 ---
 
@@ -49,9 +49,9 @@ I shamelessly stole this idea from
 
 ## Other TIL Collections
 
-* [jwworth/til](https://github.com/jwworth/til)
-* [thoughtbot/til](https://github.com/thoughtbot/til)
-* [jbranchaud/til](https://github.com/jbranchaud/til)
+- [jwworth/til](https://github.com/jwworth/til)
+- [thoughtbot/til](https://github.com/thoughtbot/til)
+- [jbranchaud/til](https://github.com/jbranchaud/til)
 
 ## License
 

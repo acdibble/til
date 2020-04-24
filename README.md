@@ -24,6 +24,7 @@ variety of languages and technologies.
 ### JavaScript
 
 - [Readline interface](javascript/readline-interface.md)
+- [Readline interface 2](javascript/readline-interface-2.md)
 
 ### shell
 

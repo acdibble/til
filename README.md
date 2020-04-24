@@ -29,6 +29,7 @@ variety of languages and technologies.
 - [`mv` Tips and Tricks](shell/mv-tips-and-tricks.md)
 - [Oh My Zsh Aliases](shell/oh-my-zsh-aliases.md)
 - [String manipulation](shell/string-manipulation.md)
+- [`which`](shell/which.md)
 
 ### WebAssembly
 

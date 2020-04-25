@@ -20,7 +20,8 @@ demonstrating it:
 $ echo "The example"
 \`\`\`
 
-Here is some more text maybe with the source or some additional info.`, { encoding: 'utf8', flag: 'w' });
+Here is some more text maybe with the source or some additional info.
+`, { encoding: 'utf8', flag: 'wx' });
 
 const sortLowerCase = (a, b) => (a.toLowerCase() < b.toLowerCase() ? -1 : 1);
 

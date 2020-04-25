@@ -18,6 +18,7 @@
   "WebAssembly": [
     "Break statements",
     "Global variables",
-    "Memory management"
+    "Memory management",
+    "Tables"
   ]
 }

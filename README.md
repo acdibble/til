@@ -23,6 +23,7 @@ variety of languages and technologies.
 
 ### JavaScript
 
+- [File system flags in Node](javascript/fs-flags-in-node.md)
 - [Readline interface](javascript/readline-interface.md)
 - [Readline interface 2](javascript/readline-interface-2.md)
 

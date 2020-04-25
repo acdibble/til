@@ -1,23 +1,17 @@
 #!/usr/bin/env node
 const fs = require('fs');
 
-const [
-  tocCategory,
-  tocName,
-  fileName = tocName.toLowerCase().replace(/ /g, '-'),
-  category = tocCategory.toLowerCase(),
-] = process.argv.slice(2);
+const [newCategory, newTopic] = process.argv.slice(2);
 
-const re = /[^\w]/g;
-const lowerCaseAndSort = (transform) => (a, b) => (
-  transform(a) < transform(b) ? -1 : 1
-);
+const topicToFileName = (topic) => topic.toLowerCase().replace(/ /g, '-').replace(/`/g, '');
+const catToDir = (category) => category.toLowerCase();
+const fullPath = (category, topic) => `${catToDir(category)}/${topicToFileName(topic)}.md`
 
 try {
-  fs.mkdirSync(`${__dirname}/${category}`);
+  fs.mkdirSync(`${__dirname}/${catToDir(newCategory)}`);
 } catch {}
 
-fs.writeFileSync(`${__dirname}/${category}/${fileName}.md`, `# ${tocName}
+fs.writeFileSync(fullPath(`${__dirname}/${newCategory}`, newTopic), `# ${newTopic}
 
 Here is some text explaining the thing I learned, how I came across it, and
 demonstrating it:
@@ -26,31 +20,54 @@ demonstrating it:
 $ echo "The example"
 \`\`\`
 
-Here is some more text maybe with the source or some additional info.`, { encoding: 'utf8', flag: 'wx' });
+Here is some more text maybe with the source or some additional info.`, { encoding: 'utf8', flag: 'w' });
 
-const readme = fs.readFileSync('README.md', 'utf8').split('\n');
+const sortLowerCase = (a, b) => (a.toLowerCase() < b.toLowerCase() ? -1 : 1);
 
-const newCategory = `### ${tocCategory}`;
-let newCatIndex = readme.indexOf(newCategory);
-const categories = readme.filter((line) => line.startsWith('###')).slice(1);
+const structure = JSON.parse(fs.readFileSync('structure.json', 'utf8'));
+structure[newCategory] = (structure[newCategory] || []).concat([newTopic]).sort(sortLowerCase);
+fs.writeFileSync('structure.json', JSON.stringify(structure, null, 2), 'utf8');
 
-if (newCatIndex === -1) {
-  categories.push(newCategory);
-  categories.sort(lowerCaseAndSort((s) => s.replace(re, '').toLowerCase()));
-  newCatIndex = readme.indexOf(categories[categories.indexOf(newCategory) + 1 ]);
-  if (newCatIndex === -1) newCatIndex = readme.indexOf('## About');
-  readme.splice(newCatIndex, 0, newCategory, '', '');
-  const categoryList = readme.filter((l) => /\- \[.+?\]\(#/.test(l));
-  categoryList.push(`- [${tocCategory}](#${tocCategory})`);
-  categoryList.sort(lowerCaseAndSort((s) => s.replace(re, "").toLowerCase()));
-  const categoryListStart = readme.indexOf('### Categories');
-  readme.splice(categoryListStart + 2, categoryList.length - 1, ...categoryList);
-}
+const readme = fs.createWriteStream('README.md', 'utf8');
+readme.write(`# TIL
 
-const nextTopic = categories[categories.indexOf(newCategory) + 1];
-const topics = readme.slice(newCatIndex + 2, readme.indexOf(nextTopic || '## About') - 1);
-topics.push(`- [${tocName}](${category}/${fileName}.md)`);
-topics.filter(Boolean).sort(lowerCaseAndSort((s) => s.match(/\[.+?\]/)[1]));
-readme.splice(newCatIndex + 2, topics.length - 1, ...topics);
+> Today I Learned
 
-fs.writeFileSync('README.md', readme.join('\n'), 'utf8');
+A collection of concise write-ups on small things I learn day to day across a
+variety of languages and technologies.
+
+---
+
+### Categories
+
+`);
+
+const categories = ['', '---', ''];
+Object.keys(structure).sort(sortLowerCase).forEach((category) => {
+  readme.write(`- [${category}](#${category})\n`);
+  categories.push(
+    `### ${category}`,
+    '',
+    ...structure[category].map((topic) => `- [${topic}](${fullPath(category, topic)})`),
+    '',
+  );
+});
+
+readme.write(categories.join('\n'));
+readme.write(`
+## About
+
+I shamelessly stole this idea from
+[jbranchaud/til](https://github.com/jbranchaud/til).
+
+## Other TIL Collections
+
+- [jwworth/til](https://github.com/jwworth/til)
+- [thoughtbot/til](https://github.com/thoughtbot/til)
+- [jbranchaud/til](https://github.com/jbranchaud/til)
+
+## License
+
+This repository is licensed under the MIT license. See \`LICENSE\` for
+details.
+`)

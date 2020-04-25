@@ -1,0 +1,23 @@
+{
+  "C++": [
+    "Scoped enums"
+  ],
+  "JavaScript": [
+    "Readline interface",
+    "Readline interface 2"
+  ],
+  "shell": [
+    "`mv` Tips and Tricks",
+    "Oh My Zsh Aliases",
+    "String manipulation",
+    "`which`"
+  ],
+  "vim": [
+    "Ruler"
+  ],
+  "WebAssembly": [
+    "Break statements",
+    "Global variables",
+    "Memory management"
+  ]
+}

@@ -10,4 +10,5 @@ index to start the search at, you can use the sticky `y` flag[1].
 enabled[2].
 
 [1] [javascript.info](https://javascript.info/regexp-introduction)
+<br />
 [2] [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll)

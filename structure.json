@@ -5,7 +5,8 @@
   "JavaScript": [
     "File system flags in Node",
     "Readline interface",
-    "Readline interface 2"
+    "Readline interface 2",
+    "Regular expression flags"
   ],
   "shell": [
     "`mv` Tips and Tricks",

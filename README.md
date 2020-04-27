@@ -11,6 +11,7 @@ variety of languages and technologies.
 
 - [C++](#C++)
 - [JavaScript](#JavaScript)
+- [Rails](#Rails)
 - [shell](#shell)
 - [vim](#vim)
 - [WebAssembly](#WebAssembly)
@@ -27,6 +28,10 @@ variety of languages and technologies.
 - [Readline interface](javascript/readline-interface.md)
 - [Readline interface 2](javascript/readline-interface-2.md)
 - [Regular expression flags](javascript/regular-expression-flags.md)
+
+### Rails
+
+- [Active record attributes](rails/active-record-attributes.md)
 
 ### shell
 

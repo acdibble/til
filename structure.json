@@ -22,5 +22,8 @@
     "Global variables",
     "Memory management",
     "Tables"
+  ],
+  "Rails": [
+    "Active record attributes"
   ]
 }

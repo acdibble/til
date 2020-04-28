@@ -4,7 +4,7 @@ const fs = require('fs');
 const [newCategory, newTopic] = process.argv.slice(2);
 
 const topicToFileName = (topic) => topic.toLowerCase().replace(/ /g, '-').replace(/`/g, '');
-const catToDir = (category) => category.toLowerCase();
+const catToDir = (category) => category.toLowerCase().replace(/ /g, '-');
 const fullPath = (category, topic) => `${catToDir(category)}/${topicToFileName(topic)}.md`
 
 try {

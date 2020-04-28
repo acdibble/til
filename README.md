@@ -15,6 +15,7 @@ variety of languages and technologies.
 - [Rails](#Rails)
 - [shell](#shell)
 - [vim](#vim)
+- [VS Code](#VS Code)
 - [WebAssembly](#WebAssembly)
 
 ---
@@ -48,6 +49,10 @@ variety of languages and technologies.
 ### vim
 
 - [Ruler](vim/ruler.md)
+
+### VS Code
+
+- [External terminal](vs-code/external-terminal.md)
 
 ### WebAssembly
 

@@ -25,5 +25,8 @@
   ],
   "Rails": [
     "Active record attributes"
+  ],
+  "PostgreSQL": [
+    "Filter clause"
   ]
 }

@@ -31,5 +31,8 @@
   ],
   "VS Code": [
     "External terminal"
+  ],
+  "Ruby": [
+    "`squeeze`"
   ]
 }

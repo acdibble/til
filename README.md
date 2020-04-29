@@ -13,6 +13,7 @@ variety of languages and technologies.
 - [JavaScript](#JavaScript)
 - [PostgreSQL](#PostgreSQL)
 - [Rails](#Rails)
+- [Ruby](#Ruby)
 - [shell](#shell)
 - [vim](#vim)
 - [VS Code](#VS Code)
@@ -38,6 +39,10 @@ variety of languages and technologies.
 ### Rails
 
 - [Active record attributes](rails/active-record-attributes.md)
+
+### Ruby
+
+- [`squeeze`](ruby/squeeze.md)
 
 ### shell
 

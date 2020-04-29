@@ -34,5 +34,8 @@
   ],
   "Ruby": [
     "`squeeze`"
+  ],
+  "Linux": [
+    "U2F"
   ]
 }

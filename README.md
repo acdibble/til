@@ -17,7 +17,7 @@ variety of languages and technologies.
 - [Ruby](#Ruby)
 - [shell](#shell)
 - [vim](#vim)
-- [VS Code](#VS Code)
+- [VS Code](#VS-Code)
 - [WebAssembly](#WebAssembly)
 
 ---

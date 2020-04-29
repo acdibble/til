@@ -45,7 +45,7 @@ variety of languages and technologies.
 
 const categories = ['', '---', ''];
 Object.keys(structure).sort(sortLowerCase).forEach((category) => {
-  readme.write(`- [${category}](#${category})\n`);
+  readme.write(`- [${category}](#${category.replace(/ /g, '-')})\n`);
   categories.push(
     `### ${category}`,
     '',

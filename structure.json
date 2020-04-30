@@ -9,6 +9,7 @@
     "Regular expression flags"
   ],
   "shell": [
+    "List directories only",
     "`mv` Tips and Tricks",
     "Oh My Zsh Aliases",
     "String manipulation",

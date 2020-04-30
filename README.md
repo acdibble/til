@@ -44,6 +44,7 @@ variety of languages and technologies.
 ### Rails
 
 - [Active record attributes](rails/active-record-attributes.md)
+- [`select` vs `pluck`](rails/select-vs-pluck.md)
 
 ### Ruby
 

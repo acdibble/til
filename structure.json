@@ -24,7 +24,8 @@
     "Tables"
   ],
   "Rails": [
-    "Active record attributes"
+    "Active record attributes",
+    "`select` vs `pluck`"
   ],
   "PostgreSQL": [
     "Filter clause"

@@ -23,7 +23,7 @@ $ echo "The example"
 Here is some more text maybe with the source or some additional info.
 `, { encoding: 'utf8', flag: 'wx' });
 
-const sortLowerCase = (a, b) => (a.toLowerCase() < b.toLowerCase() ? -1 : 1);
+const sortLowerCase = (a, b) => (topicToFileName(a) < (topicToFileName(b)) ? -1 : 1);
 
 const structure = JSON.parse(fs.readFileSync('structure.json', 'utf8'));
 structure[newCategory] = (structure[newCategory] || []).concat([newTopic]).sort(sortLowerCase);

@@ -1,5 +1,7 @@
 # Readline interface 2
 
+[Part 1](readline-interface.md)
+
 If you want to pipe something into a Node.js file, `readline` will read
 everything from `stdin` and then close after the pipe has finished:
 

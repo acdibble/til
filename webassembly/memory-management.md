@@ -1,9 +1,9 @@
 # Memory management
 
-TI finally L how to interact with WebAssembly memory from JS. There are two
-basic ways, 1. exporting memory to JS and 2. importing memory from JS. Below I
-show the (IMO simpler) exporting memory approach. Be aware of byte-lengths in
-linear memory[1].
+There are two ways of interacting with WebAssembly memory from JS, 1. exporting
+memory to JS and 2. importing memory from JS. Demonstrated below is the somewhat
+easier way (method 1). Memory in WebAssembly is linear[1], so byte sizes of data
+has to be taken into account with the offset:
 
 ```wasm
 // mod.wat
@@ -18,7 +18,7 @@ linear memory[1].
 )
 ```
 
-After exporting the memory, we can access the memory as an exported member on
+After exporting the memory, the memory can be accessed as an exported member on
 the WASM instance and combine it with a Uint32Array to enable direct reading and
 writing directly to the instance's memory:
 
@@ -33,7 +33,7 @@ console.log(instance.exports.read(0))
 
 This is useful in avoiding the overhead that comes with crossing the boundary
 between JS and WASM during function invocations. Instead of loading values
-one-by-one in function calls, you can put them directly into the buffer in JS.
+one-by-one in function calls, they can be put directly into the buffer in JS.
 
 Some further reading that helped me along is
 [WebAssembly by Hand](https://blog.scottlogic.com/2018/04/26/webassembly-by-hand.html)

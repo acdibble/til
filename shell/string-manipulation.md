@@ -13,3 +13,5 @@ example
 also `#`, `##`, and `%%` that you can find more out about
 [here](https://stackoverflow.com/questions/34951901/percent-symbol-in-bash-whats-it-used-for)
 .
+
+This is useful when [mass renaming files](mv-tips-and-tricks.md).

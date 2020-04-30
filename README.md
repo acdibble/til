@@ -5,6 +5,11 @@
 A collection of concise write-ups on small things I learn day to day across a
 variety of languages and technologies.
 
+This is a mix between "this is a useful thing that I learned that could help
+others" and "this is something really annoying that took forever to find out and
+I know I'll come across it again at some point so I want it committed for
+posterity".
+
 ---
 
 ### Categories
@@ -53,6 +58,7 @@ variety of languages and technologies.
 
 ### shell
 
+- [List directories only](shell/list-directories-only.md)
 - [`mv` Tips and Tricks](shell/mv-tips-and-tricks.md)
 - [Oh My Zsh Aliases](shell/oh-my-zsh-aliases.md)
 - [String manipulation](shell/string-manipulation.md)

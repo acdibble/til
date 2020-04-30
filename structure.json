@@ -37,6 +37,7 @@
     "`squeeze`"
   ],
   "Linux": [
-    "U2F"
+    "U2F",
+    "Yubico Authenticator on Fedora"
   ]
 }

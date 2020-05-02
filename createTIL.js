@@ -29,6 +29,8 @@ const structure = JSON.parse(fs.readFileSync('structure.json', 'utf8'));
 structure[newCategory] = (structure[newCategory] || []).concat([newTopic]).sort(sortLowerCase);
 fs.writeFileSync('structure.json', JSON.stringify(structure, null, 2), 'utf8');
 
+const tilCount = Object.entries(structure).reduce((acc, tils) => acc + tils.length, 0);
+
 const readme = fs.createWriteStream('README.md', 'utf8');
 readme.write(`# TIL
 
@@ -41,6 +43,8 @@ This is a mix between "this is a useful thing that I learned that could help
 others" and "this is something really annoying that took forever to find out and
 I know I'll come across it again at some point so I want it committed for
 posterity".
+
+${tilCount} TILs and growing!
 
 ---
 

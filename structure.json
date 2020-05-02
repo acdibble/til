@@ -38,6 +38,7 @@
     "`squeeze`"
   ],
   "Linux": [
+    "Force quit hung ssh",
     "U2F",
     "Yubico Authenticator on Fedora"
   ]

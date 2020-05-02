@@ -39,6 +39,7 @@
   ],
   "Linux": [
     "Force quit hung ssh",
+    "Killing other ssh connections",
     "U2F",
     "Yubico Authenticator on Fedora"
   ]

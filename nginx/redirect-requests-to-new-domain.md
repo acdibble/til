@@ -1,6 +1,6 @@
 # Redirect requests to new domain
 
-Nginx makes it easy to redirect all requests to a different domain:
+nginx makes it easy to redirect all requests to a different domain:
 
 ```
 server {

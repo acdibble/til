@@ -27,9 +27,9 @@ const sortLowerCase = (a, b) => (topicToFileName(a) < (topicToFileName(b)) ? -1 
 
 const structure = JSON.parse(fs.readFileSync('structure.json', 'utf8'));
 structure[newCategory] = (structure[newCategory] || []).concat([newTopic]).sort(sortLowerCase);
-fs.writeFileSync('structure.json', JSON.stringify(structure, null, 2), 'utf8');
+fs.writeFileSync('structure.json', JSON.stringify(structure), 'utf8');
 
-const tilCount = Object.entries(structure).reduce((acc, tils) => acc + tils.length, 0);
+const tilCount = Object.values(structure).reduce((acc, tils) => acc + tils.length, 0);
 
 const readme = fs.createWriteStream('README.md', 'utf8');
 readme.write(`# TIL

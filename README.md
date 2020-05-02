@@ -40,6 +40,7 @@ posterity".
 
 ### Linux
 
+- [Force quit hung ssh](linux/force-quit-hung-ssh.md)
 - [U2F](linux/u2f.md)
 - [Yubico Authenticator on Fedora](linux/yubico-authenticator-on-fedora.md)
 

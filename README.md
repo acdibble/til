@@ -10,7 +10,7 @@ others" and "this is something really annoying that took forever to find out and
 I know I'll come across it again at some point so I want it committed for
 posterity".
 
-26 TILs and growing!
+27 TILs and growing!
 
 ---
 
@@ -20,6 +20,7 @@ posterity".
 - [git](#git)
 - [JavaScript](#JavaScript)
 - [Linux](#Linux)
+- [nginx](#nginx)
 - [PostgreSQL](#PostgreSQL)
 - [Rails](#Rails)
 - [Ruby](#Ruby)
@@ -52,6 +53,10 @@ posterity".
 - [Killing other ssh connections](linux/killing-other-ssh-connections.md)
 - [U2F](linux/u2f.md)
 - [Yubico Authenticator on Fedora](linux/yubico-authenticator-on-fedora.md)
+
+### nginx
+
+- [Redirect requests to new domain](nginx/redirect-requests-to-new-domain.md)
 
 ### PostgreSQL
 

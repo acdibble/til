@@ -10,13 +10,14 @@ others" and "this is something really annoying that took forever to find out and
 I know I'll come across it again at some point so I want it committed for
 posterity".
 
-27 TILs and growing!
+28 TILs and growing!
 
 ---
 
 ### Categories
 
 - [C++](#C++)
+- [Elixir](#Elixir)
 - [git](#git)
 - [JavaScript](#JavaScript)
 - [Linux](#Linux)
@@ -34,6 +35,10 @@ posterity".
 ### C++
 
 - [Scoped enums](c++/scoped-enums.md)
+
+### Elixir
+
+- [Get last value in IEx](elixir/get-last-value-in-iex.md)
 
 ### git
 

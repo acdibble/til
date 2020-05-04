@@ -9,6 +9,7 @@ server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
     server_name domain.com www.domain.com;
+    return 301 https://otherdomain.com$request_uri;
 }
 ```
 

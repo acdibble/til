@@ -10,7 +10,7 @@ others" and "this is something really annoying that took forever to find out and
 I know I'll come across it again at some point so I want it committed for
 posterity".
 
-30 TILs and growing!
+31 TILs and growing!
 
 ---
 
@@ -39,6 +39,7 @@ posterity".
 ### Elixir
 
 - [Get last value in IEx](elixir/get-last-value-in-iex.md)
+- [Test coverage](elixir/test-coverage.md)
 - [Test setup](elixir/test-setup.md)
 - [Turn on history in IEx](elixir/turn-on-history-in-iex.md)
 

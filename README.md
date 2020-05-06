@@ -10,7 +10,7 @@ others" and "this is something really annoying that took forever to find out and
 I know I'll come across it again at some point so I want it committed for
 posterity".
 
-31 TILs and growing!
+32 TILs and growing!
 
 ---
 
@@ -46,6 +46,7 @@ posterity".
 ### git
 
 - [Find file creation date](git/find-file-creation-date.md)
+- [Push commit with tags](git/push-commit-with-tags.md)
 - [Set commit message editor](git/set-commit-message-editor.md)
 
 ### JavaScript

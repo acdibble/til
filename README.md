@@ -10,7 +10,7 @@ others" and "this is something really annoying that took forever to find out and
 I know I'll come across it again at some point so I want it committed for
 posterity".
 
-35 TILs and growing!
+36 TILs and growing!
 
 ---
 
@@ -65,6 +65,7 @@ posterity".
 - [List directories only](linux/list-directories-only.md)
 - [`mv` Tips and Tricks](linux/mv-tips-and-tricks.md)
 - [Oh My Zsh Aliases](linux/oh-my-zsh-aliases.md)
+- [`shutdown` aliases](linux/shutdown-aliases.md)
 - [String manipulation](linux/string-manipulation.md)
 - [U2F](linux/u2f.md)
 - [`which`](linux/which.md)

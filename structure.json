@@ -2,33 +2,24 @@
   "C++": [
     "Scoped enums"
   ],
+  "Elixir": [
+    "Base encoding methods",
+    "Get last value in IEx",
+    "Releases",
+    "Test coverage",
+    "Test setup",
+    "Turn on history in IEx"
+  ],
+  "git": [
+    "Find file creation date",
+    "Push commit with tags",
+    "Set commit message editor"
+  ],
   "JavaScript": [
     "File system flags in Node",
     "Readline interface",
     "Readline interface 2",
     "Regular expression flags"
-  ],
-  "vim": [
-    "Ruler"
-  ],
-  "WebAssembly": [
-    "Break statements",
-    "Global variables",
-    "Memory management",
-    "Tables"
-  ],
-  "Rails": [
-    "Active record attributes",
-    "`select` vs `pluck`"
-  ],
-  "PostgreSQL": [
-    "Filter clause"
-  ],
-  "VS Code": [
-    "External terminal"
-  ],
-  "Ruby": [
-    "`squeeze`"
   ],
   "Linux": [
     "Finding size of folder",
@@ -37,25 +28,35 @@
     "List directories only",
     "`mv` Tips and Tricks",
     "Oh My Zsh Aliases",
+    "`shutdown` aliases",
     "String manipulation",
     "U2F",
     "`which`",
     "Yubico Authenticator on Fedora"
   ],
-  "git": [
-    "Find file creation date",
-    "Push commit with tags",
-    "Set commit message editor"
-  ],
   "nginx": [
     "Redirect requests to new domain"
   ],
-  "Elixir": [
-    "Base encoding methods",
-    "Get last value in IEx",
-    "Releases",
-    "Test coverage",
-    "Test setup",
-    "Turn on history in IEx"
+  "PostgreSQL": [
+    "Filter clause"
+  ],
+  "Rails": [
+    "Active record attributes",
+    "`select` vs `pluck`"
+  ],
+  "Ruby": [
+    "`squeeze`"
+  ],
+  "vim": [
+    "Ruler"
+  ],
+  "VS Code": [
+    "External terminal"
+  ],
+  "WebAssembly": [
+    "Break statements",
+    "Global variables",
+    "Memory management",
+    "Tables"
   ]
 }

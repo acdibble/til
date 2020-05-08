@@ -31,6 +31,7 @@
     "`squeeze`"
   ],
   "Linux": [
+    "Finding size of folder",
     "Force quit hung ssh",
     "Killing other ssh connections",
     "List directories only",

@@ -27,7 +27,13 @@ const sortLowerCase = (a, b) => (topicToFileName(a) < (topicToFileName(b)) ? -1 
 
 const structure = JSON.parse(fs.readFileSync('structure.json', 'utf8'));
 structure[newCategory] = (structure[newCategory] || []).concat([newTopic]).sort(sortLowerCase);
-fs.writeFileSync('structure.json', JSON.stringify(structure, null, 2), 'utf8');
+const output = Object.keys(structure)
+  .sort((a, b) => catToDir(a) < catToDir(b) ? -1 : 1)
+  .reduce((acc, cat) => {
+    acc[cat] = structure[cat];
+    return acc;
+  }, {});
+fs.writeFileSync('structure.json', JSON.stringify(output, null, 2), 'utf8');
 
 const tilCount = Object.values(structure).reduce((acc, tils) => acc + tils.length, 0);
 
@@ -53,7 +59,7 @@ ${tilCount} TILs and growing!
 `);
 
 const categories = ['', '---', ''];
-Object.keys(structure).sort(sortLowerCase).forEach((category) => {
+Object.keys(output).forEach((category) => {
   readme.write(`- [${category}](#${category.replace(/ /g, '-')})\n`);
   categories.push(
     `### ${category}`,

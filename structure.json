@@ -54,6 +54,7 @@
   "Elixir": [
     "Base encoding methods",
     "Get last value in IEx",
+    "Releases",
     "Test coverage",
     "Test setup",
     "Turn on history in IEx"

@@ -10,7 +10,7 @@ others" and "this is something really annoying that took forever to find out and
 I know I'll come across it again at some point so I want it committed for
 posterity".
 
-34 TILs and growing!
+35 TILs and growing!
 
 ---
 
@@ -25,7 +25,6 @@ posterity".
 - [PostgreSQL](#PostgreSQL)
 - [Rails](#Rails)
 - [Ruby](#Ruby)
-- [shell](#shell)
 - [vim](#vim)
 - [VS Code](#VS-Code)
 - [WebAssembly](#WebAssembly)
@@ -60,14 +59,15 @@ posterity".
 
 ### Linux
 
+- [Finding size of folder](linux/finding-size-of-folder.md)
 - [Force quit hung ssh](linux/force-quit-hung-ssh.md)
 - [Killing other ssh connections](linux/killing-other-ssh-connections.md)
-- [List directories only](shell/list-directories-only.md)
-- [`mv` Tips and Tricks](shell/mv-tips-and-tricks.md)
-- [Oh My Zsh Aliases](shell/oh-my-zsh-aliases.md)
-- [String manipulation](shell/string-manipulation.md)
+- [List directories only](linux/list-directories-only.md)
+- [`mv` Tips and Tricks](linux/mv-tips-and-tricks.md)
+- [Oh My Zsh Aliases](linux/oh-my-zsh-aliases.md)
+- [String manipulation](linux/string-manipulation.md)
 - [U2F](linux/u2f.md)
-- [`which`](shell/which.md)
+- [`which`](linux/which.md)
 - [Yubico Authenticator on Fedora](linux/yubico-authenticator-on-fedora.md)
 
 ### nginx

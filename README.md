@@ -10,7 +10,7 @@ others" and "this is something really annoying that took forever to find out and
 I know I'll come across it again at some point so I want it committed for
 posterity".
 
-36 TILs and growing!
+37 TILs and growing!
 
 ---
 
@@ -39,6 +39,7 @@ posterity".
 
 - [Base encoding methods](elixir/base-encoding-methods.md)
 - [Get last value in IEx](elixir/get-last-value-in-iex.md)
+- [Inspect with labels](elixir/inspect-with-labels.md)
 - [Releases](elixir/releases.md)
 - [Test coverage](elixir/test-coverage.md)
 - [Test setup](elixir/test-setup.md)

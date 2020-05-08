@@ -5,6 +5,7 @@
   "Elixir": [
     "Base encoding methods",
     "Get last value in IEx",
+    "Inspect with labels",
     "Releases",
     "Test coverage",
     "Test setup",

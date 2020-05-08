@@ -62,7 +62,12 @@ posterity".
 
 - [Force quit hung ssh](linux/force-quit-hung-ssh.md)
 - [Killing other ssh connections](linux/killing-other-ssh-connections.md)
+- [List directories only](shell/list-directories-only.md)
+- [`mv` Tips and Tricks](shell/mv-tips-and-tricks.md)
+- [Oh My Zsh Aliases](shell/oh-my-zsh-aliases.md)
+- [String manipulation](shell/string-manipulation.md)
 - [U2F](linux/u2f.md)
+- [`which`](shell/which.md)
 - [Yubico Authenticator on Fedora](linux/yubico-authenticator-on-fedora.md)
 
 ### nginx
@@ -81,14 +86,6 @@ posterity".
 ### Ruby
 
 - [`squeeze`](ruby/squeeze.md)
-
-### shell
-
-- [List directories only](shell/list-directories-only.md)
-- [`mv` Tips and Tricks](shell/mv-tips-and-tricks.md)
-- [Oh My Zsh Aliases](shell/oh-my-zsh-aliases.md)
-- [String manipulation](shell/string-manipulation.md)
-- [`which`](shell/which.md)
 
 ### vim
 

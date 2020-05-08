@@ -8,13 +8,6 @@
     "Readline interface 2",
     "Regular expression flags"
   ],
-  "shell": [
-    "List directories only",
-    "`mv` Tips and Tricks",
-    "Oh My Zsh Aliases",
-    "String manipulation",
-    "`which`"
-  ],
   "vim": [
     "Ruler"
   ],
@@ -40,7 +33,12 @@
   "Linux": [
     "Force quit hung ssh",
     "Killing other ssh connections",
+    "List directories only",
+    "`mv` Tips and Tricks",
+    "Oh My Zsh Aliases",
+    "String manipulation",
     "U2F",
+    "`which`",
     "Yubico Authenticator on Fedora"
   ],
   "git": [

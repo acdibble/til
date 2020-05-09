@@ -6,6 +6,7 @@
     "Base encoding methods",
     "Get last value in IEx",
     "Inspect with labels",
+    "Maximum integer size",
     "Releases",
     "Test coverage",
     "Test setup",

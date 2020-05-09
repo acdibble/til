@@ -3,14 +3,16 @@
 > Today I Learned
 
 A collection of concise write-ups on small things I learn day to day across a
-variety of languages and technologies.
+variety of languages and technologies. Sometimes I find them by knowing what I'm
+looking for. Other times I go looking for anything that will help. Most times I
+end up saying "neat" and creating an entry.
 
-This is a mix between "this is a useful thing that I learned that could help
-others" and "this is something really annoying that took forever to find out and
-I know I'll come across it again at some point so I want it committed for
-posterity".
+These TILs are a mix between "this is a useful thing that I learned that could
+help others" and "this is something really annoying that took forever to find
+out and I know I'll come across it again at some point so I want it committed
+for posterity".
 
-37 TILs and growing!
+38 TILs and growing!
 
 ---
 
@@ -40,6 +42,7 @@ posterity".
 - [Base encoding methods](elixir/base-encoding-methods.md)
 - [Get last value in IEx](elixir/get-last-value-in-iex.md)
 - [Inspect with labels](elixir/inspect-with-labels.md)
+- [Maximum integer size](elixir/maximum-integer-size.md)
 - [Releases](elixir/releases.md)
 - [Test coverage](elixir/test-coverage.md)
 - [Test setup](elixir/test-setup.md)

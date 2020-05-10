@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-40 TILs and growing!
+41 TILs and growing!
 
 ---
 
@@ -63,6 +63,7 @@ for posterity".
 
 ### Linux
 
+- [Find process running on port](linux/find-process-running-on-port.md)
 - [Finding size of folder](linux/finding-size-of-folder.md)
 - [Force quit hung ssh](linux/force-quit-hung-ssh.md)
 - [Killing other ssh connections](linux/killing-other-ssh-connections.md)

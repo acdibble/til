@@ -32,6 +32,7 @@
     "Oh My Zsh Aliases",
     "`shutdown` aliases",
     "String manipulation",
+    "`tar` with nested directories",
     "U2F",
     "Using variables in .env file on the command line",
     "`which`",

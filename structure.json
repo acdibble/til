@@ -33,6 +33,7 @@
     "`shutdown` aliases",
     "String manipulation",
     "U2F",
+    "Using variables in .env file on the command line",
     "`which`",
     "Yubico Authenticator on Fedora"
   ],

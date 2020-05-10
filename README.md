@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-38 TILs and growing!
+39 TILs and growing!
 
 ---
 
@@ -72,6 +72,7 @@ for posterity".
 - [`shutdown` aliases](linux/shutdown-aliases.md)
 - [String manipulation](linux/string-manipulation.md)
 - [U2F](linux/u2f.md)
+- [Using variables in .env file on the command line](linux/using-variables-in-env-file-on-the-command-line.md)
 - [`which`](linux/which.md)
 - [Yubico Authenticator on Fedora](linux/yubico-authenticator-on-fedora.md)
 

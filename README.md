@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-41 TILs and growing!
+42 TILs and growing!
 
 ---
 
@@ -25,6 +25,7 @@ for posterity".
 - [Linux](#Linux)
 - [nginx](#nginx)
 - [PostgreSQL](#PostgreSQL)
+- [Powershell](#Powershell)
 - [Rails](#Rails)
 - [Ruby](#Ruby)
 - [vim](#vim)
@@ -85,6 +86,10 @@ for posterity".
 ### PostgreSQL
 
 - [Filter clause](postgresql/filter-clause.md)
+
+### Powershell
+
+- [Tailing a file](powershell/tailing-a-file.md)
 
 ### Rails
 

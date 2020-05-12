@@ -45,6 +45,9 @@
   "PostgreSQL": [
     "Filter clause"
   ],
+  "Powershell": [
+    "Tailing a file"
+  ],
   "Rails": [
     "Active record attributes",
     "`select` vs `pluck`"

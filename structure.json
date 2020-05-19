@@ -15,7 +15,8 @@
   "git": [
     "Find file creation date",
     "Push commit with tags",
-    "Set commit message editor"
+    "Set commit message editor",
+    "Sync deleted remote branches"
   ],
   "JavaScript": [
     "File system flags in Node",

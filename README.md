@@ -28,6 +28,7 @@ for posterity".
 - [Powershell](#Powershell)
 - [Rails](#Rails)
 - [Ruby](#Ruby)
+- [Rust](#Rust)
 - [vim](#vim)
 - [VS Code](#VS-Code)
 - [WebAssembly](#WebAssembly)
@@ -100,6 +101,10 @@ for posterity".
 ### Ruby
 
 - [`squeeze`](ruby/squeeze.md)
+
+### Rust
+
+- [Ranges with a custom step](rust/ranges-with-a-custom-step.md)
 
 ### vim
 

@@ -44,7 +44,8 @@
     "Redirect requests to new domain"
   ],
   "PostgreSQL": [
-    "Filter clause"
+    "Filter clause",
+    "Finding next primary key for table"
   ],
   "Powershell": [
     "Tailing a file"

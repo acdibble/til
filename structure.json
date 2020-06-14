@@ -45,7 +45,8 @@
   ],
   "PostgreSQL": [
     "Filter clause",
-    "Finding next primary key for table"
+    "Finding next primary key for table",
+    "with clauses"
   ],
   "Powershell": [
     "Tailing a file"

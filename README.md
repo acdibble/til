@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-46 TILs and growing!
+47 TILs and growing!
 
 ---
 
@@ -89,6 +89,7 @@ for posterity".
 
 - [Filter clause](postgresql/filter-clause.md)
 - [Finding next primary key for table](postgresql/finding-next-primary-key-for-table.md)
+- [Grouping sets](postgresql/grouping-sets.md)
 - [with clauses](postgresql/with-clauses.md)
 
 ### Powershell

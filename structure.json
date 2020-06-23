@@ -46,6 +46,7 @@
   "PostgreSQL": [
     "Filter clause",
     "Finding next primary key for table",
+    "Finding public table names",
     "Grouping sets",
     "with clauses"
   ],

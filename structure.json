@@ -19,9 +19,6 @@
     "Sync deleted remote branches"
   ],
   "JavaScript": [
-    "File system flags in Node",
-    "Readline interface",
-    "Readline interface 2",
     "Regular expression flags"
   ],
   "Linux": [
@@ -42,6 +39,11 @@
   ],
   "nginx": [
     "Redirect requests to new domain"
+  ],
+  "Node.js": [
+    "File system flags in Node",
+    "Readline interface",
+    "Readline interface 2"
   ],
   "PostgreSQL": [
     "Filter clause",

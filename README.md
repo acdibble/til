@@ -24,6 +24,7 @@ for posterity".
 - [JavaScript](#JavaScript)
 - [Linux](#Linux)
 - [nginx](#nginx)
+- [Node.js](#Node.js)
 - [PostgreSQL](#PostgreSQL)
 - [Powershell](#Powershell)
 - [Rails](#Rails)
@@ -59,9 +60,6 @@ for posterity".
 
 ### JavaScript
 
-- [File system flags in Node](javascript/file-system-flags-in-node.md)
-- [Readline interface](javascript/readline-interface.md)
-- [Readline interface 2](javascript/readline-interface-2.md)
 - [Regular expression flags](javascript/regular-expression-flags.md)
 
 ### Linux
@@ -84,6 +82,12 @@ for posterity".
 ### nginx
 
 - [Redirect requests to new domain](nginx/redirect-requests-to-new-domain.md)
+
+### Node.js
+
+- [File system flags in Node](node.js/file-system-flags-in-node.md)
+- [Readline interface](node.js/readline-interface.md)
+- [Readline interface 2](node.js/readline-interface-2.md)
 
 ### PostgreSQL
 

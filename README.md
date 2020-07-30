@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-48 TILs and growing!
+49 TILs and growing!
 
 ---
 
@@ -86,6 +86,7 @@ for posterity".
 ### Node.js
 
 - [File system flags in Node](node.js/file-system-flags-in-node.md)
+- [High resolution timer](node.js/high-resolution-timer.md)
 - [Readline interface](node.js/readline-interface.md)
 - [Readline interface 2](node.js/readline-interface-2.md)
 

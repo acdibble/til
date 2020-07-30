@@ -42,6 +42,7 @@
   ],
   "Node.js": [
     "File system flags in Node",
+    "High resolution timer",
     "Readline interface",
     "Readline interface 2"
   ],

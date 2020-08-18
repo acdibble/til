@@ -56,6 +56,9 @@
   "Powershell": [
     "Tailing a file"
   ],
+  "Python": [
+    "Finding available methods for class"
+  ],
   "Rails": [
     "Active record attributes",
     "`select` vs `pluck`"

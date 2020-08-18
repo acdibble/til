@@ -2,16 +2,19 @@
 const fs = require('fs');
 
 const [newCategory, newTopic] = process.argv.slice(2);
+const structure = JSON.parse(fs.readFileSync('structure.json', 'utf8'));
+let output = structure;
 
 const topicToFileName = (topic) => topic.toLowerCase().replace(/ /g, '-').replace(/[`.]/g, '');
 const catToDir = (category) => category.toLowerCase().replace(/ /g, '-');
 const fullPath = (category, topic) => `${catToDir(category)}/${topicToFileName(topic)}.md`
 
-try {
-  fs.mkdirSync(`${__dirname}/${catToDir(newCategory)}`);
-} catch {}
-
-fs.writeFileSync(fullPath(`${__dirname}/${newCategory}`, newTopic), `# ${newTopic}
+if (newCategory !== 'rebuild') {
+  try {
+    fs.mkdirSync(`${__dirname}/${catToDir(newCategory)}`);
+  } catch {}
+  
+  fs.writeFileSync(fullPath(`${__dirname}/${newCategory}`, newTopic), `# ${newTopic}
 
 Here is some text explaining the thing I learned, how I came across it, and
 demonstrating it:
@@ -22,20 +25,23 @@ $ echo "The example"
 
 Here is some more text maybe with the source or some additional info.
 `, { encoding: 'utf8', flag: 'wx' });
+  
+  const sortLowerCase = (a, b) => (topicToFileName(a) < (topicToFileName(b)) ? -1 : 1);
+  
+  structure[newCategory] = (structure[newCategory] || []).concat([newTopic]).sort(sortLowerCase);
+  output = Object.keys(structure)
+    .sort((a, b) => catToDir(a) < catToDir(b) ? -1 : 1)
+    .reduce((acc, cat) => {
+      acc[cat] = structure[cat];
+      return acc;
+    }, {});
+  
+  fs.writeFileSync('structure.json', JSON.stringify(output, null, 2), 'utf8');
+}
 
-const sortLowerCase = (a, b) => (topicToFileName(a) < (topicToFileName(b)) ? -1 : 1);
 
-const structure = JSON.parse(fs.readFileSync('structure.json', 'utf8'));
-structure[newCategory] = (structure[newCategory] || []).concat([newTopic]).sort(sortLowerCase);
-const output = Object.keys(structure)
-  .sort((a, b) => catToDir(a) < catToDir(b) ? -1 : 1)
-  .reduce((acc, cat) => {
-    acc[cat] = structure[cat];
-    return acc;
-  }, {});
-fs.writeFileSync('structure.json', JSON.stringify(output, null, 2), 'utf8');
-
-const tilCount = Object.values(structure).reduce((acc, tils) => acc + tils.length, 0);
+const tils = Object.values(structure)
+const tilCount = tils.reduce((acc, tils) => acc + tils.length, 0);
 
 const readme = fs.createWriteStream('README.md', 'utf8');
 readme.write(`# TIL
@@ -52,7 +58,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-${tilCount} TILs and growing!
+${tilCount} TILs across ${tils.length} categories and growing!
 
 ---
 

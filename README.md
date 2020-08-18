@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-49 TILs and growing!
+50 TILs and growing!
 
 ---
 
@@ -27,6 +27,7 @@ for posterity".
 - [Node.js](#Node.js)
 - [PostgreSQL](#PostgreSQL)
 - [Powershell](#Powershell)
+- [Python](#Python)
 - [Rails](#Rails)
 - [Ruby](#Ruby)
 - [Rust](#Rust)
@@ -101,6 +102,10 @@ for posterity".
 ### Powershell
 
 - [Tailing a file](powershell/tailing-a-file.md)
+
+### Python
+
+- [Finding available methods for class](python/finding-available-methods-for-class.md)
 
 ### Rails
 

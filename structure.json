@@ -41,6 +41,7 @@
     "Redirect requests to new domain"
   ],
   "Node.js": [
+    "`Dirent`s",
     "File system flags in Node",
     "High resolution timer",
     "Readline interface",

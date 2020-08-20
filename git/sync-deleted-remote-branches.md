@@ -1,6 +1,6 @@
 # Sync deleted remote branches
 
-To remove all local branches that were deleted remotely, `git fetch` can be used
+To remove all local branches that were deleted remotely, `git-fetch` can be used
 with a prune flag to remove them:
 
 ```shell

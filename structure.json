@@ -13,6 +13,7 @@
     "Turn on history in IEx"
   ],
   "git": [
+    "Avoiding `git-checkout`",
     "Find file creation date",
     "Push commit with tags",
     "Set commit message editor",

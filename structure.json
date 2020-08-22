@@ -70,7 +70,8 @@
     "`squeeze`"
   ],
   "Rust": [
-    "Ranges with a custom step"
+    "Ranges with a custom step",
+    "u32 from u8 buffer"
   ],
   "vim": [
     "Ruler"

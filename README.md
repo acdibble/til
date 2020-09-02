@@ -74,6 +74,7 @@ for posterity".
 - [List directories only](linux/list-directories-only.md)
 - [`mv` Tips and Tricks](linux/mv-tips-and-tricks.md)
 - [Oh My Zsh Aliases](linux/oh-my-zsh-aliases.md)
+- [Return just matched strings with `grep`](linux/return-just-matched-strings-with-grep.md)
 - [`shutdown` aliases](linux/shutdown-aliases.md)
 - [String manipulation](linux/string-manipulation.md)
 - [`tar` with nested directories](linux/tar-with-nested-directories.md)

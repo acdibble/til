@@ -13,7 +13,7 @@ if (newCategory !== 'rebuild') {
   try {
     fs.mkdirSync(`${__dirname}/${catToDir(newCategory)}`);
   } catch {}
-  
+
   fs.writeFileSync(fullPath(`${__dirname}/${newCategory}`, newTopic), `# ${newTopic}
 
 Here is some text explaining the thing I learned, how I came across it, and
@@ -25,9 +25,9 @@ $ echo "The example"
 
 Here is some more text maybe with the source or some additional info.
 `, { encoding: 'utf8', flag: 'wx' });
-  
+
   const sortLowerCase = (a, b) => (topicToFileName(a) < (topicToFileName(b)) ? -1 : 1);
-  
+
   structure[newCategory] = (structure[newCategory] || []).concat([newTopic]).sort(sortLowerCase);
   output = Object.keys(structure)
     .sort((a, b) => catToDir(a) < catToDir(b) ? -1 : 1)
@@ -35,7 +35,7 @@ Here is some more text maybe with the source or some additional info.
       acc[cat] = structure[cat];
       return acc;
     }, {});
-  
+
   fs.writeFileSync('structure.json', JSON.stringify(output, null, 2), 'utf8');
 }
 

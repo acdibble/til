@@ -24,6 +24,7 @@
     "Regular expression flags"
   ],
   "Linux": [
+    "`file` utility",
     "Find process running on port",
     "Finding size of folder",
     "Force quit hung ssh",

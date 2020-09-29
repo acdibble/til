@@ -41,6 +41,9 @@
     "`which`",
     "Yubico Authenticator on Fedora"
   ],
+  "linux": [
+    "Count matches in file"
+  ],
   "nginx": [
     "Redirect requests to new domain"
   ],

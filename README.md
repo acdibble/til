@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-57 TILs across 16 categories and growing!
+58 TILs across 17 categories and growing!
 
 ---
 
@@ -23,6 +23,7 @@ for posterity".
 - [git](#git)
 - [JavaScript](#JavaScript)
 - [Linux](#Linux)
+- [linux](#linux)
 - [nginx](#nginx)
 - [Node.js](#Node.js)
 - [PostgreSQL](#PostgreSQL)
@@ -83,6 +84,10 @@ for posterity".
 - [Using variables in .env file on the command line](linux/using-variables-in-env-file-on-the-command-line.md)
 - [`which`](linux/which.md)
 - [Yubico Authenticator on Fedora](linux/yubico-authenticator-on-fedora.md)
+
+### linux
+
+- [Count matches in file](linux/count-matches-in-file.md)
 
 ### nginx
 

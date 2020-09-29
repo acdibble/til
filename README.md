@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-58 TILs across 17 categories and growing!
+59 TILs across 17 categories and growing!
 
 ---
 
@@ -64,6 +64,7 @@ for posterity".
 
 ### JavaScript
 
+- [Chunking a string](javascript/chunking-a-string.md)
 - [Regular expression flags](javascript/regular-expression-flags.md)
 
 ### Linux

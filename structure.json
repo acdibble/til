@@ -48,6 +48,7 @@
     "`Dirent`s",
     "File system flags in Node",
     "High resolution timer",
+    "Readable stream async generator",
     "Readline interface",
     "Readline interface 2"
   ],

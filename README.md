@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-56 TILs across 16 categories and growing!
+57 TILs across 16 categories and growing!
 
 ---
 
@@ -93,6 +93,7 @@ for posterity".
 - [`Dirent`s](node.js/dirents.md)
 - [File system flags in Node](node.js/file-system-flags-in-node.md)
 - [High resolution timer](node.js/high-resolution-timer.md)
+- [Readable stream async generator](node.js/readable-stream-async-generator.md)
 - [Readline interface](node.js/readline-interface.md)
 - [Readline interface 2](node.js/readline-interface-2.md)
 

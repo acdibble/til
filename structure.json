@@ -52,6 +52,7 @@
     "`Dirent`s",
     "File system flags in Node",
     "High resolution timer",
+    "Processing PDF files",
     "Readable stream async generator",
     "Readline interface",
     "Readline interface 2"

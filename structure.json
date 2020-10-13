@@ -22,7 +22,8 @@
   ],
   "JavaScript": [
     "Chunking a string",
-    "Regular expression flags"
+    "Regular expression flags",
+    "Regular expression non-capture groups"
   ],
   "Linux": [
     "`file` utility",

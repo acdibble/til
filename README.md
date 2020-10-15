@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-61 TILs across 17 categories and growing!
+62 TILs across 17 categories and growing!
 
 ---
 
@@ -80,6 +80,7 @@ for posterity".
 - [Oh My Zsh Aliases](linux/oh-my-zsh-aliases.md)
 - [Return just matched strings with `grep`](linux/return-just-matched-strings-with-grep.md)
 - [`shutdown` aliases](linux/shutdown-aliases.md)
+- [Sorting directories by size](linux/sorting-directories-by-size.md)
 - [String manipulation](linux/string-manipulation.md)
 - [`tar` with nested directories](linux/tar-with-nested-directories.md)
 - [U2F](linux/u2f.md)

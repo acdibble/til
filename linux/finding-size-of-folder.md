@@ -1,7 +1,7 @@
 # Finding size of folder
 
-The `du` (disk usage) command can be used to determine the total size of a folder and its
-contents:
+The `du` (disk usage) command can be used to determine the total size of a
+folder and its contents:
 
 ```shell
 $ du -sh ~

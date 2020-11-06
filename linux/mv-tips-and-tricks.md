@@ -27,6 +27,7 @@ for> done
 There are other useful shortcuts for
 [basic string manipulation](string-manipulation.md) in shell.
 
-[1] [Cyberciti.biz](https://www.cyberciti.biz/faq/explain-brace-expansion-in-cp-mv-bash-shell-commands/)
-<br/>
-[2] [StackExchange](https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files)
+[1]
+[Cyberciti.biz](https://www.cyberciti.biz/faq/explain-brace-expansion-in-cp-mv-bash-shell-commands/)
+<br/> [2]
+[StackExchange](https://unix.stackexchange.com/questions/19654/how-do-i-change-the-extension-of-multiple-files)

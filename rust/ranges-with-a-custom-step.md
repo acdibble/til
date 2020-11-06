@@ -1,8 +1,7 @@
 # Ranges with a custom step
 
-Rust `Range` structs and anything that implements the
-`Iterator` trait have a `step_by` method that allows you to iterate by a
-given number:
+Rust `Range` structs and anything that implements the `Iterator` trait have a
+`step_by` method that allows you to iterate by a given number:
 
 ```rust
 for i in (1..10).step_by(2) {

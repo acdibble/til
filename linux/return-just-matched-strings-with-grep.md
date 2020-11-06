@@ -7,6 +7,7 @@ each match.
 To run eslint on a repo and find which typescript-eslint rules currently have
 infractions, you can sort and then take uniques of the matches returned by
 `grep` with the aforementioned flags:
+
 ```shell
 $ npx eslint . | grep -oh "@typescript-eslint/.*" | sort | uniq
 ```

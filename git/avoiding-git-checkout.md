@@ -6,6 +6,7 @@ into other functions, which has made `git-checkout` obsolete for me and reduced
 autopilot induced `git-checkout` anxiety:
 
 Switching branches:
+
 ```shell
 # instead of `git checkout master`:
 $ git switch branch-name
@@ -14,6 +15,7 @@ $ git switch -c new-branch-name
 ```
 
 Resetting files back to state at last commit:
+
 ```shell
 # instead of `git checkout -- .`
 $ git restore .

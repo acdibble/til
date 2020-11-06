@@ -9,6 +9,5 @@ flag[1] can be used to start a search at a different index of the string than 0.
 `RegExp` instances also have getter methods that can tell you which flags are
 enabled[2].
 
-[1] [javascript.info](https://javascript.info/regexp-introduction)
-<br />
-[2] [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll)
+[1] [javascript.info](https://javascript.info/regexp-introduction) <br /> [2]
+[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/dotAll)

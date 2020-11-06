@@ -16,6 +16,7 @@
     "Avoiding `git-checkout`",
     "Find file creation date",
     "Get list of commits between two tags",
+    "Getting file from another branch",
     "Push commit with tags",
     "Set commit message editor",
     "Sync deleted remote branches"

@@ -23,11 +23,11 @@ the WASM instance and combine it with a Uint32Array to enable direct reading and
 writing directly to the instance's memory:
 
 ```js
-const module = await WebAssembly.compile(readFileSync('path/to/mod.wasm'));
+const module = await WebAssembly.compile(readFileSync("path/to/mod.wasm"));
 const instance = await WebAssembly.instantiate(module);
 const memory = new Uint32Array(instance.exports.memory.buffer, 0, 1);
 memory[0] = 42;
-console.log(instance.exports.read(0))
+console.log(instance.exports.read(0));
 // => 42
 ```
 

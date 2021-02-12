@@ -46,7 +46,8 @@
     "Yubico Authenticator on Fedora"
   ],
   "linux": [
-    "Count matches in file"
+    "Count matches in file",
+    "`zmv`"
   ],
   "nginx": [
     "Redirect requests to new domain"

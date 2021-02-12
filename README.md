@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-64 TILs across 17 categories and growing!
+65 TILs across 17 categories and growing!
 
 ---
 
@@ -92,6 +92,7 @@ for posterity".
 ### linux
 
 - [Count matches in file](linux/count-matches-in-file.md)
+- [`zmv`](linux/zmv.md)
 
 ### nginx
 

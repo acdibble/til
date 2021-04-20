@@ -26,29 +26,6 @@
     "Regular expression flags",
     "Regular expression non-capture groups"
   ],
-  "Linux": [
-    "`file` utility",
-    "Find process running on port",
-    "Finding size of folder",
-    "Force quit hung ssh",
-    "Killing other ssh connections",
-    "List directories only",
-    "`mv` Tips and Tricks",
-    "Oh My Zsh Aliases",
-    "Return just matched strings with `grep`",
-    "`shutdown` aliases",
-    "Sorting directories by size",
-    "String manipulation",
-    "`tar` with nested directories",
-    "U2F",
-    "Using variables in .env file on the command line",
-    "`which`",
-    "Yubico Authenticator on Fedora"
-  ],
-  "linux": [
-    "Count matches in file",
-    "`zmv`"
-  ],
   "nginx": [
     "Redirect requests to new domain"
   ],
@@ -85,6 +62,27 @@
   "Rust": [
     "Ranges with a custom step",
     "u32 from u8 buffer"
+  ],
+  "Unix": [
+    "Count matches in file",
+    "`file` utility",
+    "Find process running on port",
+    "Finding size of folder",
+    "Force quit hung ssh",
+    "Killing other ssh connections",
+    "List directories only",
+    "`mv` Tips and Tricks",
+    "Oh My Zsh Aliases",
+    "Return just matched strings with `grep`",
+    "`shutdown` aliases",
+    "Sorting directories by size",
+    "String manipulation",
+    "`tar` with nested directories",
+    "U2F",
+    "Using variables in .env file on the command line",
+    "`which`",
+    "Yubico Authenticator on Fedora",
+    "`zmv`"
   ],
   "vim": [
     "Ruler"

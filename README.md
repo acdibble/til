@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-65 TILs across 17 categories and growing!
+66 TILs across 16 categories and growing!
 
 ---
 
@@ -22,8 +22,6 @@ for posterity".
 - [Elixir](#Elixir)
 - [git](#git)
 - [JavaScript](#JavaScript)
-- [Linux](#Linux)
-- [linux](#linux)
 - [nginx](#nginx)
 - [Node.js](#Node.js)
 - [PostgreSQL](#PostgreSQL)
@@ -32,6 +30,7 @@ for posterity".
 - [Rails](#Rails)
 - [Ruby](#Ruby)
 - [Rust](#Rust)
+- [Unix](#Unix)
 - [vim](#vim)
 - [VS Code](#VS-Code)
 - [WebAssembly](#WebAssembly)
@@ -68,31 +67,6 @@ for posterity".
 - [Chunking a string](javascript/chunking-a-string.md)
 - [Regular expression flags](javascript/regular-expression-flags.md)
 - [Regular expression non-capture groups](javascript/regular-expression-non-capture-groups.md)
-
-### Linux
-
-- [`file` utility](linux/file-utility.md)
-- [Find process running on port](linux/find-process-running-on-port.md)
-- [Finding size of folder](linux/finding-size-of-folder.md)
-- [Force quit hung ssh](linux/force-quit-hung-ssh.md)
-- [Killing other ssh connections](linux/killing-other-ssh-connections.md)
-- [List directories only](linux/list-directories-only.md)
-- [`mv` Tips and Tricks](linux/mv-tips-and-tricks.md)
-- [Oh My Zsh Aliases](linux/oh-my-zsh-aliases.md)
-- [Return just matched strings with `grep`](linux/return-just-matched-strings-with-grep.md)
-- [`shutdown` aliases](linux/shutdown-aliases.md)
-- [Sorting directories by size](linux/sorting-directories-by-size.md)
-- [String manipulation](linux/string-manipulation.md)
-- [`tar` with nested directories](linux/tar-with-nested-directories.md)
-- [U2F](linux/u2f.md)
-- [Using variables in .env file on the command line](linux/using-variables-in-env-file-on-the-command-line.md)
-- [`which`](linux/which.md)
-- [Yubico Authenticator on Fedora](linux/yubico-authenticator-on-fedora.md)
-
-### linux
-
-- [Count matches in file](linux/count-matches-in-file.md)
-- [`zmv`](linux/zmv.md)
 
 ### nginx
 
@@ -139,6 +113,28 @@ for posterity".
 - [Ranges with a custom step](rust/ranges-with-a-custom-step.md)
 - [u32 from u8 buffer](rust/u32-from-u8-buffer.md)
 
+### Unix
+
+- [Count matches in file](unix/count-matches-in-file.md)
+- [`file` utility](unix/file-utility.md)
+- [Find process running on port](unix/find-process-running-on-port.md)
+- [Finding size of folder](unix/finding-size-of-folder.md)
+- [Force quit hung ssh](unix/force-quit-hung-ssh.md)
+- [Killing other ssh connections](unix/killing-other-ssh-connections.md)
+- [List directories only](unix/list-directories-only.md)
+- [`mv` Tips and Tricks](unix/mv-tips-and-tricks.md)
+- [Oh My Zsh Aliases](unix/oh-my-zsh-aliases.md)
+- [Return just matched strings with `grep`](unix/return-just-matched-strings-with-grep.md)
+- [`shutdown` aliases](unix/shutdown-aliases.md)
+- [Sorting directories by size](unix/sorting-directories-by-size.md)
+- [String manipulation](unix/string-manipulation.md)
+- [`tar` with nested directories](unix/tar-with-nested-directories.md)
+- [U2F](unix/u2f.md)
+- [Using variables in .env file on the command line](unix/using-variables-in-env-file-on-the-command-line.md)
+- [`which`](unix/which.md)
+- [Yubico Authenticator on Fedora](unix/yubico-authenticator-on-fedora.md)
+- [`zmv`](unix/zmv.md)
+
 ### vim
 
 - [Ruler](vim/ruler.md)
@@ -167,4 +163,5 @@ I shamelessly stole this idea from
 
 ## License
 
-This repository is licensed under the MIT license. See `LICENSE` for details.
+This repository is licensed under the MIT license. See `LICENSE` for
+details.

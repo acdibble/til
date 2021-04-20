@@ -124,6 +124,7 @@ for posterity".
 - [List directories only](unix/list-directories-only.md)
 - [`mv` Tips and Tricks](unix/mv-tips-and-tricks.md)
 - [Oh My Zsh Aliases](unix/oh-my-zsh-aliases.md)
+- [Quickly paste clipboard to file](unix/quickly-paste-clipboard-to-file.md)
 - [Return just matched strings with `grep`](unix/return-just-matched-strings-with-grep.md)
 - [`shutdown` aliases](unix/shutdown-aliases.md)
 - [Sorting directories by size](unix/sorting-directories-by-size.md)
@@ -163,5 +164,4 @@ I shamelessly stole this idea from
 
 ## License
 
-This repository is licensed under the MIT license. See `LICENSE` for
-details.
+This repository is licensed under the MIT license. See `LICENSE` for details.

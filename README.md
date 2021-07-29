@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-66 TILs across 16 categories and growing!
+67 TILs across 17 categories and growing!
 
 ---
 
@@ -22,6 +22,7 @@ for posterity".
 - [Elixir](#Elixir)
 - [git](#git)
 - [JavaScript](#JavaScript)
+- [MySQL](#MySQL)
 - [nginx](#nginx)
 - [Node.js](#Node.js)
 - [PostgreSQL](#PostgreSQL)
@@ -67,6 +68,10 @@ for posterity".
 - [Chunking a string](javascript/chunking-a-string.md)
 - [Regular expression flags](javascript/regular-expression-flags.md)
 - [Regular expression non-capture groups](javascript/regular-expression-non-capture-groups.md)
+
+### MySQL
+
+- [Getting last inserted id](mysql/getting-last-inserted-id.md)
 
 ### nginx
 
@@ -164,4 +169,5 @@ I shamelessly stole this idea from
 
 ## License
 
-This repository is licensed under the MIT license. See `LICENSE` for details.
+This repository is licensed under the MIT license. See `LICENSE` for
+details.

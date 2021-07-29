@@ -26,6 +26,9 @@
     "Regular expression flags",
     "Regular expression non-capture groups"
   ],
+  "MySQL": [
+    "Getting last inserted id"
+  ],
   "nginx": [
     "Redirect requests to new domain"
   ],

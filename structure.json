@@ -33,6 +33,7 @@
     "Redirect requests to new domain"
   ],
   "Node.js": [
+    "`Buffer.concat`",
     "`Dirent`s",
     "File system flags in Node",
     "High resolution timer",

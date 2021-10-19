@@ -1,5 +1,9 @@
 #!/usr/bin/env node
-const fs = require('fs');
+import * as fs from 'fs';
+import * as url from 'url';
+import * as path from 'path';
+
+const dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 const [newCategory, newTopic] = process.argv.slice(2);
 const structure = JSON.parse(fs.readFileSync('structure.json', 'utf8'));
@@ -7,14 +11,16 @@ let output = structure;
 
 const topicToFileName = (topic) => topic.toLowerCase().replace(/ /g, '-').replace(/[`.]/g, '');
 const catToDir = (category) => category.toLowerCase().replace(/ /g, '-');
-const fullPath = (category, topic) => `${catToDir(category)}/${topicToFileName(topic)}.md`
+const fullPath = (category, topic) => `${catToDir(category)}/${topicToFileName(topic)}.md`;
 
 if (newCategory !== 'rebuild') {
   try {
-    fs.mkdirSync(`${__dirname}/${catToDir(newCategory)}`);
+    fs.mkdirSync(`${dirname}/${catToDir(newCategory)}`);
   } catch {}
 
-  fs.writeFileSync(fullPath(`${__dirname}/${newCategory}`, newTopic), `# ${newTopic}
+  fs.writeFileSync(
+    fullPath(`${dirname}/${newCategory}`, newTopic),
+    `# ${newTopic}
 
 Here is some text explaining the thing I learned, how I came across it, and
 demonstrating it:
@@ -24,13 +30,15 @@ $ echo "The example"
 \`\`\`
 
 Here is some more text maybe with the source or some additional info.
-`, { encoding: 'utf8', flag: 'wx' });
+`,
+    { encoding: 'utf8', flag: 'wx' }
+  );
 
-  const sortLowerCase = (a, b) => (topicToFileName(a) < (topicToFileName(b)) ? -1 : 1);
+  const sortLowerCase = (a, b) => (topicToFileName(a) < topicToFileName(b) ? -1 : 1);
 
   structure[newCategory] = (structure[newCategory] || []).concat([newTopic]).sort(sortLowerCase);
   output = Object.keys(structure)
-    .sort((a, b) => catToDir(a) < catToDir(b) ? -1 : 1)
+    .sort((a, b) => (catToDir(a) < catToDir(b) ? -1 : 1))
     .reduce((acc, cat) => {
       acc[cat] = structure[cat];
       return acc;
@@ -39,8 +47,7 @@ Here is some more text maybe with the source or some additional info.
   fs.writeFileSync('structure.json', JSON.stringify(output, null, 2), 'utf8');
 }
 
-
-const tils = Object.values(structure)
+const tils = Object.values(structure);
 const tilCount = tils.reduce((acc, tils) => acc + tils.length, 0);
 
 const readme = fs.createWriteStream('README.md', 'utf8');
@@ -73,7 +80,7 @@ Object.keys(output).forEach((category) => {
     `### ${category}`,
     '',
     ...structure[category].map((topic) => `- [${topic}](${fullPath(category, topic)})`),
-    '',
+    ''
   );
 });
 
@@ -94,4 +101,4 @@ I shamelessly stole this idea from
 
 This repository is licensed under the MIT license. See \`LICENSE\` for
 details.
-`)
+`);

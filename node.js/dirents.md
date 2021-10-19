@@ -5,16 +5,23 @@ new promises API, it is easy to recurse through a directory and find all the
 files within:
 
 ```typescript
-const fs = require('fs');
-const path = require('path');
+import * as fs from 'fs';
+import * as path from 'path';
 
 const traverse = async (directory) => {
-  const contents = await fs.promises.readdir(directory, { withFileTypes: true });
+  const contents = await fs.promises.readdir(directory, {
+    withFileTypes: true,
+  });
 
-  const [files, directories] = contents.reduce((acc, dirent) => {
-    acc[Number(dirent.isDirectory())].push(path.resolve(directory, dirent.name));
-    return acc;
-  }, [[], []]);
+  const [files, directories] = contents.reduce(
+    (acc, dirent) => {
+      acc[Number(dirent.isDirectory())].push(
+        path.resolve(directory, dirent.name)
+      );
+      return acc;
+    },
+    [[], []]
+  );
 
   return files.concat(...(await Promise.all(directories.map(traverse))));
 };

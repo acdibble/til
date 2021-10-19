@@ -9,9 +9,9 @@ e.g. with a TCP socket or with a file stream to quickly make a `cat` command:
 ```javascript
 // cat.js
 #!/usr/bin/env node
-const { createInterface } = require('readline');
-const { resolve } = require('path');
-const { createReadStream } = require('fs');
+import { createInterface } from 'readline';
+import * as fs from 'fs';
+import * as path from 'path';
 
 const fileStream = createReadStream(resolve(process.argv[2]), 'utf8');
 
@@ -24,7 +24,7 @@ of the file directly into memory:
 
 ```javascript
 const doSomethingLineByLine = async () => {
-  const rl = createInterface(createReadStream("path/to/file", "utf8"));
+  const rl = createInterface(createReadStream('path/to/file', 'utf8'));
 
   for await (const line of rl) {
     doSomething(line);

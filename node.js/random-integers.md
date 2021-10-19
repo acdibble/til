@@ -4,7 +4,7 @@ Add in Node.js v14.10.0 is a built-in function for getting a random integer
 synchronously or asynchronously:
 
 ```javascript
-import * as crypto from "crypto";
+import * as crypto from 'crypto';
 
 console.log(crypto.randomInt(10));
 // => 5

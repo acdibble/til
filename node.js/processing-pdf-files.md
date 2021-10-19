@@ -4,9 +4,9 @@ Node.js native modules offer a way of parsing PDF documents in a memory
 efficient way using streams:
 
 ```javascript
-import * as fs from "fs";
-import { promisify } from "util";
-import * as zlib from "zlib";
+import * as fs from 'fs';
+import { promisify } from 'util';
+import * as zlib from 'zlib';
 
 const unzipAsync = promisify(zlib.unzip);
 
@@ -16,17 +16,17 @@ const pageRegExp = /(?<=>>stream\n).+?(?=\nendstream)/gsu;
 const parsePDF = async (path) => {
   // we need to cache data across chunks in case the search area finds itself
   // across the boundary of two chunks
-  let data = "";
+  let data = '';
 
   for await (const chunk of fs.createReadStream(path)) {
     // convert chunk to string for regular expression checking
-    data += chunk.toString("binary");
+    data += chunk.toString('binary');
     let sliceIndex = 0;
     for (const match of data.matchAll(pageRegExp)) {
       sliceIndex = match.index + match[0].length;
       // unzip the data from the match and convert to correct encoding
       console.log(
-        (await unzipAsync(Buffer.from(match[0], "binary"))).toString("utf8")
+        (await unzipAsync(Buffer.from(match[0], 'binary'))).toString('utf8')
       );
     }
     // remove the data that we've already seen in preparation for the next chunk

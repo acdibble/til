@@ -6,8 +6,8 @@ If you want to pipe something into a Node.js file, `readline` will read
 everything from `stdin` and then close after the pipe has finished:
 
 ```javascript
-const { createInterface } = require('readline');
-const processLine = require('./processLine');
+import { createInterface } from 'readline';
+import processLine from './processLine';
 
 const rl = createInterface(process.stdin);
 

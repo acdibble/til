@@ -4,11 +4,11 @@ Added in v10 and no longer experimental since v11.14.0, readable streams expose
 an async generator API:
 
 ```javascript
-const fs = require("fs");
-const path = require("path");
+import * as fs from 'fs';
+import * as path from 'path';
 
 (async () => {
-  const stream = fs.createReadStream(path.join(process.cwd(), "README.md"));
+  const stream = fs.createReadStream(path.join(process.cwd(), 'README.md'));
 
   for await (const chunk of stream) {
     console.log(chunk.slice(0, 5));

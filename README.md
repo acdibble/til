@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-69 TILs across 17 categories and growing!
+70 TILs across 17 categories and growing!
 
 ---
 
@@ -119,6 +119,7 @@ for posterity".
 - [`include_str!`](rust/include_str!.md)
 - [Ranges with a custom step](rust/ranges-with-a-custom-step.md)
 - [u32 from u8 buffer](rust/u32-from-u8-buffer.md)
+- [Windows](rust/windows.md)
 
 ### Unix
 

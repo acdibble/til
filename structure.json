@@ -66,7 +66,8 @@
   "Rust": [
     "`include_str!`",
     "Ranges with a custom step",
-    "u32 from u8 buffer"
+    "u32 from u8 buffer",
+    "Windows"
   ],
   "Unix": [
     "Count matches in file",

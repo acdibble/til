@@ -65,6 +65,7 @@
   ],
   "Rust": [
     "`include_str!`",
+    "`Option` into `Result`",
     "Ranges with a custom step",
     "u32 from u8 buffer",
     "Windows"

@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-70 TILs across 17 categories and growing!
+71 TILs across 17 categories and growing!
 
 ---
 
@@ -117,6 +117,7 @@ for posterity".
 ### Rust
 
 - [`include_str!`](rust/include_str!.md)
+- [`Option` into `Result`](rust/option-into-result.md)
 - [Ranges with a custom step](rust/ranges-with-a-custom-step.md)
 - [u32 from u8 buffer](rust/u32-from-u8-buffer.md)
 - [Windows](rust/windows.md)
@@ -172,4 +173,5 @@ I shamelessly stole this idea from
 
 ## License
 
-This repository is licensed under the MIT license. See `LICENSE` for details.
+This repository is licensed under the MIT license. See `LICENSE` for
+details.

@@ -2,6 +2,9 @@
   "C++": [
     "Scoped enums"
   ],
+  "CSS": [
+    "Underline offset"
+  ],
   "Elixir": [
     "Base encoding methods",
     "Get last value in IEx",

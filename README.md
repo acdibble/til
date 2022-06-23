@@ -12,13 +12,14 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-72 TILs across 17 categories and growing!
+73 TILs across 18 categories and growing!
 
 ---
 
 ### Categories
 
 - [C++](#C++)
+- [CSS](#CSS)
 - [Elixir](#Elixir)
 - [git](#git)
 - [JavaScript](#JavaScript)
@@ -41,6 +42,10 @@ for posterity".
 ### C++
 
 - [Scoped enums](c++/scoped-enums.md)
+
+### CSS
+
+- [Underline offset](css/underline-offset.md)
 
 ### Elixir
 

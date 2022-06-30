@@ -26,6 +26,7 @@
   ],
   "JavaScript": [
     "Chunking a string",
+    "ESLint debug output",
     "Regular expression flags",
     "Regular expression non-capture groups"
   ],

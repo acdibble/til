@@ -74,6 +74,9 @@
     "u32 from u8 buffer",
     "Windows"
   ],
+  "TypeScript": [
+    "Assertion functions"
+  ],
   "Unix": [
     "Count matches in file",
     "`file` utility",

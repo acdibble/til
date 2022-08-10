@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-74 TILs across 18 categories and growing!
+75 TILs across 19 categories and growing!
 
 ---
 
@@ -32,6 +32,7 @@ for posterity".
 - [Rails](#Rails)
 - [Ruby](#Ruby)
 - [Rust](#Rust)
+- [TypeScript](#TypeScript)
 - [Unix](#Unix)
 - [vim](#vim)
 - [VS Code](#VS-Code)
@@ -128,6 +129,10 @@ for posterity".
 - [u32 from u8 buffer](rust/u32-from-u8-buffer.md)
 - [Windows](rust/windows.md)
 
+### TypeScript
+
+- [Assertion functions](typescript/assertion-functions.md)
+
 ### Unix
 
 - [Count matches in file](unix/count-matches-in-file.md)
@@ -180,5 +185,4 @@ I shamelessly stole this idea from
 
 ## License
 
-This repository is licensed under the MIT license. See `LICENSE` for
-details.
+This repository is licensed under the MIT license. See `LICENSE` for details.

@@ -71,6 +71,7 @@
     "`include_str!`",
     "`Option` into `Result`",
     "Ranges with a custom step",
+    "Resize vector with fill",
     "u32 from u8 buffer",
     "Windows"
   ],

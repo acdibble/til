@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-75 TILs across 19 categories and growing!
+76 TILs across 19 categories and growing!
 
 ---
 
@@ -126,6 +126,7 @@ for posterity".
 - [`include_str!`](rust/include_str!.md)
 - [`Option` into `Result`](rust/option-into-result.md)
 - [Ranges with a custom step](rust/ranges-with-a-custom-step.md)
+- [Resize vector with fill](rust/resize-vector-with-fill.md)
 - [u32 from u8 buffer](rust/u32-from-u8-buffer.md)
 - [Windows](rust/windows.md)
 

@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-76 TILs across 19 categories and growing!
+77 TILs across 19 categories and growing!
 
 ---
 
@@ -98,6 +98,7 @@ for posterity".
 
 ### PostgreSQL
 
+- [`EXCEPT` keyword](postgresql/except-keyword.md)
 - [Filter clause](postgresql/filter-clause.md)
 - [Finding next primary key for table](postgresql/finding-next-primary-key-for-table.md)
 - [Finding public table names](postgresql/finding-public-table-names.md)

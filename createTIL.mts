@@ -1,17 +1,27 @@
-#!/usr/bin/env node
+#!/usr/bin/env -S pnpm tsx
 import * as fs from 'fs';
 import * as url from 'url';
 import * as path from 'path';
+import assert from 'assert';
 
 const dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 const [newCategory, newTopic] = process.argv.slice(2);
-const structure = JSON.parse(fs.readFileSync('structure.json', 'utf8'));
+
+assert(newCategory, 'Category is required');
+assert(newTopic, 'Topic is required');
+
+const structure: Record<string, string[]> = JSON.parse(
+  fs.readFileSync('structure.json', 'utf8'),
+);
 let output = structure;
 
-const topicToFileName = (topic) => topic.toLowerCase().replace(/ /g, '-').replace(/[`.]/g, '');
-const catToDir = (category) => category.toLowerCase().replace(/ /g, '-');
-const fullPath = (category, topic) => `${catToDir(category)}/${topicToFileName(topic)}.md`;
+const topicToFileName = (topic: string) =>
+  topic.toLowerCase().replace(/ /g, '-').replace(/[`.]/g, '');
+const catToDir = (category: string) =>
+  category.toLowerCase().replace(/ /g, '-');
+const fullPath = (category: string, topic: string) =>
+  `${catToDir(category)}/${topicToFileName(topic)}.md`;
 
 if (newCategory !== 'rebuild') {
   try {
@@ -31,12 +41,15 @@ $ echo "The example"
 
 Here is some more text maybe with the source or some additional info.
 `,
-    { encoding: 'utf8', flag: 'wx' }
+    { encoding: 'utf8', flag: 'wx' },
   );
 
-  const sortLowerCase = (a, b) => (topicToFileName(a) < topicToFileName(b) ? -1 : 1);
+  const sortLowerCase = (a, b) =>
+    topicToFileName(a) < topicToFileName(b) ? -1 : 1;
 
-  structure[newCategory] = (structure[newCategory] || []).concat([newTopic]).sort(sortLowerCase);
+  structure[newCategory] = (structure[newCategory] || [])
+    .concat([newTopic])
+    .sort(sortLowerCase);
   output = Object.keys(structure)
     .sort((a, b) => (catToDir(a) < catToDir(b) ? -1 : 1))
     .reduce((acc, cat) => {
@@ -79,8 +92,10 @@ Object.keys(output).forEach((category) => {
   categories.push(
     `### ${category}`,
     '',
-    ...structure[category].map((topic) => `- [${topic}](${fullPath(category, topic)})`),
-    ''
+    ...structure[category].map(
+      (topic) => `- [${topic}](${fullPath(category, topic)})`,
+    ),
+    '',
   );
 });
 

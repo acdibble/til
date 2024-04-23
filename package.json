@@ -23,5 +23,10 @@
     "*.js": [
       "prettier --print-width=100 --single-quote --write"
     ]
+  },
+  "dependencies": {
+    "@types/node": "^20.12.7",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
   }
 }

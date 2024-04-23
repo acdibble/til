@@ -65,6 +65,9 @@
     "Active record attributes",
     "`select` vs `pluck`"
   ],
+  "ripgrep": [
+    "List files"
+  ],
   "Ruby": [
     "`squeeze`"
   ],

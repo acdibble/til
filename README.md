@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-78 TILs across 20 categories and growing!
+79 TILs across 21 categories and growing!
 
 ---
 
@@ -26,6 +26,7 @@ for posterity".
 - [MySQL](#MySQL)
 - [nginx](#nginx)
 - [Node.js](#Node.js)
+- [node.js](#node.js)
 - [PostgreSQL](#PostgreSQL)
 - [Powershell](#Powershell)
 - [Python](#Python)
@@ -96,6 +97,10 @@ for posterity".
 - [Readable stream async generator](node.js/readable-stream-async-generator.md)
 - [Readline interface](node.js/readline-interface.md)
 - [Readline interface 2](node.js/readline-interface-2.md)
+
+### node.js
+
+- [unref a timer](node.js/unref-a-timer.md)
 
 ### PostgreSQL
 

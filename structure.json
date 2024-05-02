@@ -47,6 +47,9 @@
     "Readline interface",
     "Readline interface 2"
   ],
+  "node.js": [
+    "unref a timer"
+  ],
   "PostgreSQL": [
     "`EXCEPT` keyword",
     "Filter clause",

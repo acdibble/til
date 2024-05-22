@@ -12,7 +12,7 @@ help others" and "this is something really annoying that took forever to find
 out and I know I'll come across it again at some point so I want it committed
 for posterity".
 
-79 TILs across 21 categories and growing!
+80 TILs across 21 categories and growing!
 
 ---
 
@@ -64,6 +64,7 @@ for posterity".
 ### git
 
 - [Avoiding `git-checkout`](git/avoiding-git-checkout.md)
+- [Copy file between branches](git/copy-file-between-branches.md)
 - [Find file creation date](git/find-file-creation-date.md)
 - [Get list of commits between two tags](git/get-list-of-commits-between-two-tags.md)
 - [Getting file from another branch](git/getting-file-from-another-branch.md)

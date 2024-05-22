@@ -17,6 +17,7 @@
   ],
   "git": [
     "Avoiding `git-checkout`",
+    "Copy file between branches",
     "Find file creation date",
     "Get list of commits between two tags",
     "Getting file from another branch",
